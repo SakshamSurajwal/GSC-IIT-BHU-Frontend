@@ -1,0 +1,124 @@
+:root {
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .c-cardbox {
+    color: var(--clr-neutral-100);
+    background-size: cover;
+    /* padding: 25.7rem 0 0; */
+    min-width: 41ch;
+    height: 470px;
+    margin: 10px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: 8px 8px 32px 3px rgba(0, 0, 0, 0.5); */
+    transition: transform 500ms ease;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: filter 0.5s ease;
+  }
+  .c-blackbox{
+    color: var(--clr-neutral-100);
+    background-size: cover;
+    /* padding: 25.7rem 0 0; */
+    /* min-width: 32ch; */
+    height: 470px;
+    /* margin: 10px; */
+    border-radius: 2.5rem;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: 8px 8px 32px 3px rgba(0, 0, 0, 0.5); */
+    transition: transform 500ms ease;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: filter 0.5s ease;
+  }
+  .c-blackbox:hover{
+    background-color:rgba(0,0,0,0.5);
+    transition: 0.5s;
+  }
+  
+ 
+  .c-card-title {
+    position: relative;
+    width:  -webkit-fill-available;
+    font-size: 3rem;
+    font-weight: 500;
+    /* padding-left: 50px; */
+    font-family: "Inter","sans serif";
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .c-card-body {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0px;
+    font-size: large;
+    font-weight: bold;
+  }
+  .c-cardbox:hover .c-card-title {
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(0, 200%);
+    /* padding: 0; */
+    /* text-align: center; */
+    transition: 0.7s ease-in-out;
+  } 
+  .c-card-title{
+    transition: 0.5s ease-out;
+  }
+  .c-blackbox{
+    transition: 0.7s ease-out;
+  }
+  .c-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+  
+    padding: 0.5em 1.25em;
+  
+    margin-top: 1px;
+  }
+  
+  @media (max-width: 1400px) {
+    .c-cardbox {
+      min-width: 41ch;
+      height: 470px;
+    }
+  }
+  @media (max-width: 822px) {
+    .c-cardbox {
+      margin-bottom: 1rem;
+      min-width: 30ch;
+      height: 330px;
+    }
+  }
+  @media (max-width: 470px) {
+    .c-cardbox {
+      min-width: 230px;
+      height: 315px;
+    }
+    .c-card-title{
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      font-size: 35px;
+      width: -webkit-fill-available;
+    }
+  }

@@ -1,0 +1,58 @@
+.navitem {
+  @apply relative ml-10 text-gray-200  tracking-[1px] font-extrabold;
+}
+
+.navitem:hover::after {
+  @apply w-[100%];
+}
+
+.navitem {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.navitem::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition:
+    width 0.3s ease-out,
+    left 0.3s ease-out;
+}
+
+.navitem:hover::after,
+.navitem.active::after {
+  width: 100%;
+  left: 0;
+  transition:
+    width 0.3s ease-in,
+    left 0.3s ease-in;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.image-filter {
+  filter: brightness(10);
+  transition: filter;
+}
+
+.image-filter:hover {
+  filter: brightness(1);
+}
+
+.image-filter-nav {
+  filter: brightness(0);
+  transition: filter;
+}
+
+.image-filter-nav:hover {
+  filter: brightness(1);
+}

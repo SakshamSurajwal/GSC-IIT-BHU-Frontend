@@ -1,0 +1,33 @@
+:root {
+  --primary: #6690b7;
+}
+
+.container {
+  z-index: 10;
+  margin-top: 450px;
+  margin-bottom: 200px;
+}
+
+.swiper_container {
+  height: 600px;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 500px;
+  height: 42rem;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 550px;
+  height: 500px;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
